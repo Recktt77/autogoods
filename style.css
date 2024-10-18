@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Grid Container */
+.grid-container {
+    width: 95vw;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+/* Image Container */
+.image-container {
+    width: 100vw;
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-container {
+    font-size: 14px;
+    background-color: #931111;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main and Mobile Navigation */
+.main-nav {
+    display: block;
+}
+.number{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 20px;
+}
+
+.mob-bar {
+    display: none;
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Content Container */
+.content-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Columns */
+.column {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nav Container */
+.nav-container {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.nav-container h3 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.nav-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Goods Container */
+.goods-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    gap: 10px;
+    text-align: left;
+}
+
+.goods-container a {
+    color: #931111;
+    text-decoration: none;
+}
+
+.goods-container a:hover {
+    color: rgb(28, 28, 69);
+    text-decoration: underline;
+}
+
+.goods-container button {
+    width: 70%;
+    border: none;
+    padding: 5px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 3px;
+}
+
+.goods-container button:hover {
+    background-color: rgb(78, 78, 161);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Headings and Other Text */
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.representative, .locations {
+    margin-top: 20px;
+}
+
+.representative h2, .locations h2 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.representative p, .locations p {
+    margin: 5px 0;
+}
+
+.location {
+    margin-top: 15px;
+}
+
+.location h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.location p {
+    margin: 0;
+}
+
+/* Promo Box */
+.promo-box {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+.promo-box h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 1.2em;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+}
+
+.promo-box a {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.promo-box div {
+    margin: 20px;
+}
+
+/* Footer Contact */
+.footer-contact {
+    width: 400px;
+}
+
+.footer-contact button {
+    width: fit-content;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+/* News */
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid rgb(210, 210, 210);
+    gap: 10px;
+}
+
+.news p {
+    background-color: #ea8989;
+    width: 60%;
+    border-radius: 3px;
+}
+
+.main-nav.mobile {
+    background-color: #931111;
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.toggle-menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    width: 450px !important;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    background-color: #931111 !important;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    height: fit-content;
+    left: 10px;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+
+.mobile-menu ul li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.mobile-menu .dropdown-menu {
+    display: none; /* Hide dropdown initially */
+    margin-left: 20px;
+}
+
+.mobile-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .main-nav.mobile {
+        display: none; /* Hide mobile menu on larger screens */
+    }
+    .number{
+        display: none;
+    }
+}
